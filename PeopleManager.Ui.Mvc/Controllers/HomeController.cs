@@ -15,7 +15,23 @@ namespace PeopleManager.Ui.Mvc.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            List<PersoonModel> personen = new List<PersoonModel>
+            {
+                new PersoonModel()
+                {
+                    Name = "John",
+                    LastName = "Doe",
+                    Email = "John.Doe@gmail.com"
+                },
+                new PersoonModel()
+                {
+                    Name = "Jane",
+                    LastName = "Doe",
+                    Email = "Jane.Doe@gmail.com"
+                }
+            };
+
+            return View(personen);
         }
 
         public IActionResult Privacy()

@@ -1,1 +1,5 @@
-﻿<h1>This is where we manage our people</h1>
+﻿@model List<PeopleManager.Ui.Mvc.Models.PersoonModel>
+
+<h1>This is where we manage our people</h1>
+
+@Html.Partial("PartialView", Model)
