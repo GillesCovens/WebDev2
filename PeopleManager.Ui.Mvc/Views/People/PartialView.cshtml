@@ -1,8 +1,11 @@
 ﻿@model List<PeopleManager.Ui.Mvc.Models.PersoonModel>
 
-<ul>
     @foreach (var person in Model)
     {
-        <li>@person.Name @person.LastName - @person.Email</li>
+        <tr>
+            <td>@person.Name</td>
+            <td>@person.LastName</td>
+            <td>@person.Email</td>
+           
+        </tr>
     }
-</ul>
